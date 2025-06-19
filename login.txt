@@ -1,0 +1,50 @@
+Student Connect - Example Login Details
+
+To log in, use the email and password you registered with.
+
+If you haven't registered yet, use the Sign Up page in the app to create a new account.
+
+Example credentials (if you registered as Alice):
+  Email: alice@example.com
+  Password: password123
+
+You can use any email and password you registered with.
+
+If you forget your credentials, simply register a new account. 
+
+
+**User Schema (Registration Fields):**
+
+- name (string, required)
+- email (string, required, unique)
+- password (string, required)
+- branch (string, required)
+- year (string, required)
+- tags (array of strings, optional)
+
+**Example Registration JSON:**
+{
+  "name": "Alice",
+  "email": "alice@example.com",
+  "password": "password123",
+  "branch": "CSE",
+  "year": "2",
+  "tags": ["CSE", "2025"]
+}
+
+---
+
+**Login Details:**
+- Use the email and password you registered with.
+- If you haven't registered, use the Sign Up page in the app.
+
+**Example Login:**
+{
+  "email": "alice@example.com",
+  "password": "password123"
+}
+
+---
+
+**Instructions:**
+- You can register with any unique email and password.

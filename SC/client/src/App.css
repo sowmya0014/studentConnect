@@ -1,0 +1,313 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #18191a;
+  margin: 0;
+  padding: 0;
+  color: #f1f1f1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #232526;
+  color: #f1f1f1;
+  padding: 12px 24px;
+  gap: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.navbar a {
+  color: #f1f1f1;
+  text-decoration: none;
+  margin-right: 16px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.navbar a:hover {
+  color: #ffd700;
+}
+.navbar-user {
+  margin-right: auto;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.navbar button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 12px;
+  transition: background 0.2s;
+}
+.navbar button:hover {
+  background: #444;
+}
+
+.auth-container, .forum-container, .notifications-container, .chatgroups-container {
+  max-width: 420px;
+  margin: 32px auto;
+  background: #232526;
+  padding: 32px 28px 24px 28px;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+.auth-container h2, .forum-container h2, .notifications-container h2, .chatgroups-container h3 {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #fff;
+}
+.auth-container form, .forum-container form, .chatgroups-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.auth-container input, .forum-container input, .forum-container textarea, .chatgroups-container input {
+  padding: 8px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #18191a;
+  color: #f1f1f1;
+}
+.auth-container button, .forum-container button, .chatgroups-container button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 0;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 4px;
+  transition: background 0.2s;
+}
+.auth-container button:hover, .forum-container button:hover, .chatgroups-container button:hover {
+  background: #444;
+}
+.auth-container .error, .forum-container .error {
+  color: #ff7675;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.forum-container .post-form textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+.forum-container .category-filter {
+  display: flex;
+  gap: 8px;
+  margin: 18px 0 10px 0;
+  justify-content: center;
+}
+.forum-container .category-filter button {
+  background: #333;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.forum-container .category-filter .active {
+  background: #ffd700;
+  color: #232526;
+}
+.forum-container .posts-list {
+  margin-top: 18px;
+}
+.forum-container .post {
+  background: #18191a;
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+}
+.forum-container .post-header {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #fff;
+}
+.forum-container .post-category {
+  color: #b2bec3;
+  font-size: 0.95em;
+  margin-left: 8px;
+}
+.forum-container .post-hashtags span {
+  color: #ffd700;
+  margin-right: 6px;
+  font-size: 0.97em;
+}
+.forum-container .post-actions {
+  margin: 8px 0 4px 0;
+}
+.forum-container .comments-section {
+  margin-top: 8px;
+}
+.forum-container .comment {
+  background: #232526;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  font-size: 0.97em;
+  color: #f1f1f1;
+}
+.forum-container .comment-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+.forum-container .comment-form input {
+  flex: 1;
+}
+
+.notifications-container ul {
+  list-style: none;
+  padding: 0;
+}
+.notifications-container li {
+  padding: 10px 14px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  background: #18191a;
+  color: #f1f1f1;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.notifications-container li.unread {
+  background: #333;
+  font-weight: 600;
+  color: #ffd700;
+}
+.notifications-container li.read {
+  color: #888;
+}
+
+.chatgroups-container {
+  display: flex;
+  gap: 24px;
+  max-width: 900px;
+}
+.chatgroups-container .groups-list {
+  flex: 1;
+  background: #18191a;
+  border-radius: 8px;
+  padding: 18px 12px;
+  min-width: 180px;
+}
+.chatgroups-container .groups-list ul {
+  list-style: none;
+  padding: 0;
+}
+.chatgroups-container .groups-list li {
+  padding: 8px 10px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  background: #232526;
+  color: #f1f1f1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.2s;
+}
+.chatgroups-container .groups-list li.active {
+  background: #ffd700;
+  color: #232526;
+}
+.chatgroups-container .groups-list button {
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 0.95em;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background 0.2s;
+}
+.chatgroups-container .groups-list button:hover {
+  background: #444;
+}
+.chatgroups-container .chat-area {
+  flex: 2;
+  background: #232526;
+  border-radius: 8px;
+  padding: 18px 18px 12px 18px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+.chatgroups-container .messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  background: #18191a;
+  border-radius: 6px;
+  padding: 10px;
+}
+.chatgroups-container .message {
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  background: #232526;
+  border-radius: 4px;
+  font-size: 0.98em;
+  color: #f1f1f1;
+}
+.chatgroups-container .message-form {
+  display: flex;
+  gap: 8px;
+}
+.chatgroups-container .message-form input {
+  flex: 1;
+  background: #18191a;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}

@@ -1,0 +1,50 @@
+Student Connect - Login & Registration Details
+
+---
+
+**User Schema (Registration Fields):**
+
+- name (string, required)
+- email (string, required, unique)
+- password (string, required)
+- branch (string, required)
+- year (string, required)
+- tags (array of strings, optional)
+
+**Example Registration JSON:**
+{
+  "name": "Alice",
+  "email": "alice@example.com",
+  "password": "password123",
+  "branch": "CSE",
+  "year": "2",
+  "tags": ["CSE", "2025"]
+}
+
+---
+
+**Login Details:**
+- Use the email and password you registered with.
+- If you haven't registered, use the Sign Up page in the app.
+
+**Example Login:**
+{
+  "email": "alice@example.com",
+  "password": "password123"
+}
+
+---
+
+**Instructions:**
+- You can register with any unique email and password.
+- If you forget your credentials, simply register a new account.
+- All fields except tags are required for registration.
+- After registering or logging in, you will receive a JWT token for API access.
+
+**API Endpoints:**
+- Register: POST /api/auth/register
+- Login: POST /api/auth/login
+
+---
+
+For more details, see the README or ask your developer. 
